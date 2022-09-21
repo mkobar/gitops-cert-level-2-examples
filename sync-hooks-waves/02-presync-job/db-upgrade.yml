@@ -4,7 +4,7 @@ metadata:
   namespace: example02
   generateName: my-db-upgrade-
   annotations:
-    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook: PreSync, wave 10
 spec:
   template:
     spec:
