@@ -6,7 +6,7 @@ metadata:
   labels:
     codefresh.io/cert: smoke-job
   annotations:
-    argocd.argoproj.io/hook: PostSync, wave 10
+    argocd.argoproj.io/hook: PreSync, wave 10
 spec:
   template:
     spec:
