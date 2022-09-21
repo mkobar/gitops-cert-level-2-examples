@@ -4,7 +4,9 @@ metadata:
   namespace: example06
   generateName: disable-alerts-
   labels:
-    codefresh.io/cert: disable-job  
+    codefresh.io/cert: disable-job
+  annotations:
+    argocd.argoproj.io/hook: PreSync, wave 10
 spec:
   template:
     spec:
